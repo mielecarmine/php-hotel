@@ -14,10 +14,11 @@ require_once("./data.php")
   </head>
 <body>
     <div class="container">
-        <form action="./index.php" method="GET">
-            <input type="text">
+        <form class="mt-3" action="./index.php" method="GET">
+            <h3>Cerca Hotel:</h3>
+            <input type="text" class="form-control">
         </form>
-        <h1 class="mt-3 mb-3">Tabella Hotel Disponibili</h1>
+        <h3 class="mt-3 mb-3">Tabella Hotel Disponibili</h3>
         <table class="table">
             <thead>
                 <tr>
@@ -56,8 +57,6 @@ require_once("./data.php")
                 <?php endforeach; ?>
             </tbody>
         </table>
-
-
     </div>
 </body>
 </html>
